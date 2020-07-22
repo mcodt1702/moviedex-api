@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node moviedex.js",
-    "dev": "nodemon moviedex.js"
+    "dev": "nodemon moviedex.js",
+    "predeploy": "npm audit",
+    "deploy": "git push heroku master"
+  },
+  "engines": {
+    "node": "13.8.0"
   },
   "author": "",
   "license": "ISC",
